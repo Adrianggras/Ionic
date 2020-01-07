@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "CalculadoraGuay.adriGimenez"
+    versionCode = "1"
+    version     = "0.0.1" >
+	<icon src="icon.png" platform="ios" width="57" height="57" density="mdpi" />
+  <name>Chinese Kid Calculating</name>
+  <description>
+      Hay un niño chino contratado que hace posibles tus operaciones matemátias. Enjoy!
+  </description>
+  <author href="https://www.linkedin.com/in/adrian-gimenez-dev" email="adrianggras@gmail.com">
+      Adrián Giménez Gras
+  </author>
+  <access origin="*" />
+  <plugin name="cordova-plugin-whitelist" />
+  <plugin name="cordova-plugin-vibration" />
+</widget>
