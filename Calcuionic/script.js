@@ -11,6 +11,7 @@ function setStyle() {
         b.size = document.getElementById("size").value;
     });
 }
+
 let bol=true;
 let punto=false;
 
@@ -26,6 +27,7 @@ function n(num){
         document.getElementById("txt").innerHTML=num;
     }
 }
+
 function l(letra){
 
     if(bol===false)
@@ -34,10 +36,15 @@ function l(letra){
             bol=true;
         }
 }
+
 function del(){
     document.getElementById("txt").innerText="0";
 
 }
 function calcula(){
     document.getElementById("txt").innerHTML=eval(document.getElementById("txt").innerHTML);
+}
+
+function doblar(){
+    document.getElementById("txt").innerText*=2;
 }
