@@ -41,3 +41,15 @@ function pause() {
     s.stopAutoplay();
   });
 }
+
+function nextSlide(){
+  getSlides().forEach(function(s) {
+    s.slideNext();
+  });
+}
+
+function prevSlide(){
+  getSlides().forEach(function(s) {
+    s.slidePrev();
+  });
+}
