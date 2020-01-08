@@ -26,8 +26,8 @@
   <body onload="onLoad()">
     <ion-app>
       <ion-header>
-        <ion-toolbar>
-          <ion-title>Gallery!</ion-title>
+        <ion-toolbar color="danger">
+          <ion-title>Galería de perretes</ion-title>
           <ion-buttons slot="primary">
             <ion-button onclick="play()"
               ><ion-icon slot="icon-only" name="play"></ion-icon
@@ -48,49 +48,52 @@
       </ion-header>
       <ion-content>
         <ion-tabs>
-          <ion-button
-            style="position: absolute;top: 50%;left: 16px;font-size: 25px;z-index: 2;"
+          <ion-button color="danger"
+            style="position: absolute;top: 50%;left: 16px;font-size: 25px;z-index: 2; height: 20%;"
             onclick="prevSlide()"
             ><ion-icon name="arrow-back"></ion-icon>
           </ion-button>
-          <ion-button
-            style="position: absolute;top: 50%;right: 16px;font-size: 25px;z-index: 2;"
+          <ion-button color="danger"
+            style="position: absolute;top: 50%;right: 16px;font-size: 25px;z-index: 2; height: 20%;"
             onclick="nextSlide()"
             ><ion-icon name="arrow-forward"></ion-icon
           ></ion-button>
-          <ion-tab tab="alicante">
-            <ion-slides id="alicante">
-              <ion-slide><img src="img/alicante1.jpg"/></ion-slide>
-              <ion-slide><img src="img/alicante2.jpg"/></ion-slide>
-              <ion-slide><img src="img/alicante3.jpg"/></ion-slide>
+          <ion-tab tab="husky" color="primary">
+            <ion-slides id="husky">
+              <ion-slide><img src="img/husky1.jpg"/></ion-slide>
+              <ion-slide><img src="img/husky2.jpg"/></ion-slide>
+              <ion-slide><img src="img/husky3.jpg"/></ion-slide>
+              <ion-slide><img src="img/husky4.jpg"/></ion-slide>
             </ion-slides>
           </ion-tab>
-          <ion-tab tab="madrid">
-            <ion-slides id="madrid">
-              <ion-slide><img src="img/madrid1.jpg"/></ion-slide>
-              <ion-slide><img src="img/madrid2.jpg"/></ion-slide>
-              <ion-slide><img src="img/madrid3.jpg"/></ion-slide>
+          <ion-tab tab="shiba">
+            <ion-slides id="shiba">
+              <ion-slide><img src="img/shiba1.jpg"/></ion-slide>
+              <ion-slide><img src="img/shiba2.jpg"/></ion-slide>
+              <ion-slide><img src="img/shiba3.jpg"/></ion-slide>
+              <ion-slide><img src="img/shiba4.jpg"/></ion-slide>
             </ion-slides>
           </ion-tab>
-          <ion-tab tab="paris">
-            <ion-slides id="paris">
-              <ion-slide><img src="img/paris1.jpg"/></ion-slide>
-              <ion-slide><img src="img/paris2.jpg"/></ion-slide>
-              <ion-slide><img src="img/paris3.jpg"/></ion-slide>
+          <ion-tab tab="pitbull">
+            <ion-slides id="pitbull">
+              <ion-slide><img src="img/pitbull1.jpg"/></ion-slide>
+              <ion-slide><img src="img/pitbull2.jpg"/></ion-slide>
+              <ion-slide><img src="img/pitbull3.jpg"/></ion-slide>
+              <ion-slide><img src="img/pitbull4.jpg"/></ion-slide>
             </ion-slides>
           </ion-tab>
           <ion-tab-bar slot="bottom">
-            <ion-tab-button tab="alicante">
-              <ion-icon name="walk"></ion-icon>
-              <ion-label>Alicante</ion-label>
+            <ion-tab-button tab="husky">
+              <ion-icon name="snow"></ion-icon>
+              <ion-label>Husky</ion-label>
             </ion-tab-button>
-            <ion-tab-button tab="madrid">
-              <ion-icon name="train"></ion-icon>
-              <ion-label>Madrid</ion-label>
+            <ion-tab-button tab="shiba">
+              <ion-icon name="tennisball"></ion-icon>
+              <ion-label>Shiba</ion-label>
             </ion-tab-button>
-            <ion-tab-button tab="paris">
-              <ion-icon name="airplane"></ion-icon>
-              <ion-label>París</ion-label>
+            <ion-tab-button tab="pitbull">
+              <ion-icon name="trophy"></ion-icon>
+              <ion-label>Pitbull</ion-label>
             </ion-tab-button>
           </ion-tab-bar>
         </ion-tabs>
