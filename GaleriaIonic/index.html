@@ -48,6 +48,16 @@
       </ion-header>
       <ion-content>
         <ion-tabs>
+          <ion-button
+            style="position: absolute;top: 50%;left: 16px;font-size: 25px;z-index: 2;"
+            onclick="prevSlide()"
+            ><ion-icon name="arrow-back"></ion-icon>
+          </ion-button>
+          <ion-button
+            style="position: absolute;top: 50%;right: 16px;font-size: 25px;z-index: 2;"
+            onclick="nextSlide()"
+            ><ion-icon name="arrow-forward"></ion-icon
+          ></ion-button>
           <ion-tab tab="alicante">
             <ion-slides id="alicante">
               <ion-slide><img src="img/alicante1.jpg"/></ion-slide>
