@@ -5,6 +5,7 @@
     versionCode = "1"
     version     = "0.0.1" >
 	<icon src="lista.png" width="57" height="57" density="mdpi" />
+    
   <name>Lista Tareas</name>
   <description>
       Lista de tareas
@@ -15,4 +16,5 @@
   <access origin="*" />
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="cordova-plugin-vibration" />
+  <plugin name="cordova-plugin-x-socialsharing" spec="5.4.0" />
 </widget>
