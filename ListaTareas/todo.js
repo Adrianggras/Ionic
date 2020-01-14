@@ -163,13 +163,13 @@ function addEditItem(index = false) {
             </ion-list>
             <ion-segment value="` +
     item.icon +
-    `" color="danger">
+    `" color="danger" scrollable>
                 <ion-segment-button value="radio-button-off">Pendiente
                     <ion-icon name="radio-button-off"></ion-icon>
                 </ion-segment-button>  
                 <ion-segment-button value="radio-button-on">Completado
                     <ion-icon name="radio-button-on"></ion-icon>
-                </ion-segment-button>  
+                </ion-segment-button>
                 <ion-segment-button value="snow">Sin Importancia
                     <ion-icon name="snow"></ion-icon>
                 </ion-segment-button>
