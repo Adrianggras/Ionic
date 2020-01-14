@@ -137,9 +137,9 @@ function addEditItem(index = false) {
     `
         <ion-header>
             <ion-toolbar color="secondary">
-                <ion-title>Tareas - ` +
-    (index !== false ? "Editar Tarea" : "Nueva Tarea") +
-    `</ion-title>
+                <ion-title>
+                    Tareas - ` + (index !== false ? "Editar Tarea" : "Nueva Tarea") + `
+                </ion-title>
                 <ion-buttons slot="primary">
                     <ion-button color="danger"><ion-icon slot="icon-only" name="close"></ion-icon></ion-button>
                     <ion-button color="primary"><ion-icon slot="icon-only" name="checkmark"></ion-icon></ion-button>
@@ -150,20 +150,14 @@ function addEditItem(index = false) {
             <ion-list>
                 <ion-item>
                     <ion-label position="floating">Selecciona fecha</ion-label>
-                    <ion-datetime display-format="D MMM YYYY" max="2050-12-31" value="` +
-    item.date +
-    `"></ion-datetime>            
+                    <ion-datetime display-format="D MMM YYYY" max="2050-12-31" value="` + item.date + `"></ion-datetime>            
                 </ion-item>
                 <ion-item>
                     <ion-label position="floating">Introduce Tarea</ion-label>
-                    <ion-input value="` +
-    item.text +
-    `"></ion-input>
+                    <ion-input value="` + item.text + `"></ion-input>
                 </ion-item>
             </ion-list>
-            <ion-segment value="` +
-    item.icon +
-    `" color="danger" scrollable>
+            <ion-segment value="` + item.icon + `" color="danger" scrollable>
                 <ion-segment-button value="radio-button-off">Pendiente
                     <ion-icon name="radio-button-off"></ion-icon>
                 </ion-segment-button>  
